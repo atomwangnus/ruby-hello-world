@@ -9,5 +9,5 @@ CMD ["scl", "enable", "rh-ruby22", "./run.sh"]
 
 USER root
 RUN chmod og+rw /opt/app-root/src/db
-RUN sed -i "s/test/atom/" /opt/app-root/src/webhook
+RUN sed -i "s/atom/test/" /opt/app-root/src/webhook
 USER default
